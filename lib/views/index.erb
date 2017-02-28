@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Is my shoes sold?</title>
+    <title><%= @label %></title>
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -27,10 +27,10 @@
         <!-- First Featurette -->
         <div class="featurette" id="about">
             <img class="featurette-image img-circle img-responsive pull-right" src="https://trial-sport.ru/images/catalog/k514_blc_1211703.jpg" height="300px" width="300px">
-            <h2 class="featurette-heading">Your price is ::
-              <span class="text-muted">4300</span>
+            <h2 class="featurette-heading">Price for your shoes ::
+              <span class="text-muted"><%= @price %> </span>
           </h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            <p class="lead"> <%= @description %></p>
         </div>
     </div>
 
