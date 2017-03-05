@@ -18,3 +18,14 @@ get '/' do
     @label = @page.css('.card_right > h2:nth-child(1)').text
     erb :index
 end
+
+get '/search' do
+    erb :search
+end
+
+post '/result' do
+    p params
+    @fname = params[:fname]
+    @lname = params[:lname]
+    erb :result
+end
